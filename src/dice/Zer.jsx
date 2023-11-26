@@ -1,17 +1,4 @@
-// import React from 'react'
-// import img1 from './imgs/img1.png'
-// import img2 from './imgs/img2.png'
-// const Zer = () => {
-//   return (
-//     <div>
-//       <img src={img1} alt='img1'/>
-//       <img src={img2} alt='img2'/>
 
-//     </div>
-//   )
-// }
-
-// export default Zer
 import React, { useState } from 'react';
 import img1 from './imgs/img1.png';
 import img2 from './imgs/img2.png';
@@ -24,7 +11,7 @@ const Zer = () => {
   const [selectedDama2, setSelectedDama2] = useState(2);
 
   const handleDamaClick = (damaNumber) => {
-    const randomDama = Math.floor(Math.random() * 6) + 1; // Random number between 1 and 6
+    const randomDama = Math.floor(Math.random() * 6) + 1; 
 
     if (damaNumber === 1) {
       setSelectedDama1(randomDama);
